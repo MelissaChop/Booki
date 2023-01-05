@@ -1,11 +1,14 @@
+/* Calligraphie*/ /* penser a mettre le font-weight: .. ; celon la partie du projet */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 p{
 font-family: 'Raleway', sans-serif;
 }
 
+/*Box-sizing*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
+  
