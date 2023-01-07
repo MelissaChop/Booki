@@ -5,13 +5,6 @@ p{
 font-family: 'Raleway', sans-serif;
 }
 
-/*Sulphur point */
-@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap')
-
-h1{
-  font-family: 'Sulphur+Point', sans-serif;
-}
-
 /*Box-sizing*/
 html {
   box-sizing: border-box;
