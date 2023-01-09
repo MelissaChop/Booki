@@ -41,13 +41,13 @@ Left: 982px;
 flex: 50%;
 text-align: center;
 color:black;
+size:16px;
 }
 
 .lien:hover{
-  border-top: 2px solid #0065FC;
+  border-top:  2px solid #0065FC;
   /*text-decoration: overline 2px solid #0065FC;*/
   color: #0065FC;
   padding: 48px;
   margin: -48px;
 }
-  
