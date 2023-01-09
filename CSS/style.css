@@ -1,9 +1,5 @@
 /* Calligraphie*/ /* penser a mettre le font-weight: .. ; celon la partie du projet */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap') 
-
-p{
-font-family: 'Raleway', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /*Box-sizing*/
 html {
@@ -11,5 +7,47 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body{
+font-family: 'Raleway', sans-serif;
+max-width: 1400px;
+}
+
+
+/*Header*/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  line-height: 19px;
+  margin: 48px;
+}
+
+.Logo {
+  width: 61.09px;
+  height: 19px;
+}
+
+nav{
+width: 324px;
+display: flex;
+height: 19px;
+Top: 48px;
+Left: 982px;
+}
+
+.lien{
+flex: 50%;
+text-align: center;
+color:black;
+}
+
+.lien:hover{
+  border-top: 2px solid #0065FC;
+  /*text-decoration: overline 2px solid #0065FC;*/
+  color: #0065FC;
+  padding: 48px;
+  margin: -48px;
 }
   
