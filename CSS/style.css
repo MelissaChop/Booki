@@ -56,7 +56,7 @@ position:relative;
   border-top: 2px solid #0065FC;
   left: 0px;
   right: 0px;
-  margin: auto;
+  margin-top: -48px;
   visibility: hidden;
 }
 
@@ -65,7 +65,29 @@ position:relative;
 }
 
 /*Main*/
+main{
+  margin: 48px;
+}
                         /*Section Recherche*/
+/*Titre*/
+h1{
+font-family: Raleway;
+font-size: 22px;
+font-weight: 700;
+height: 26px;
+letter-spacing: 0em;
+line-height: 26px;
+text-align: left;
+vertical-align: Top;
+}
+
+p{
+font-family: Raleway;
+font-size: 16px;
+height: 19px;
+text-align: Left;
+vertical-align: Top;
+}
 
 
 .disabled{
@@ -78,7 +100,9 @@ position:relative;
 
 
 /*footer*/
-
+footer{
+  margin:48px;
+}
 .info{
   list-style-type: none;
 }
