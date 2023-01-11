@@ -51,3 +51,6 @@ size:16px;
   padding: 48px;
   margin: -48px;
 }
+.info{
+  list-style-type: none;
+}
