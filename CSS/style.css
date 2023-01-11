@@ -16,6 +16,7 @@ max-width: 1400px;
 
 
 /*Header*/
+                                  /*EN TETE*/
 
 header{
   display: flex;
@@ -62,6 +63,21 @@ position:relative;
 .lien:hover::before{
   visibility: visible;
 }
+
+/*Main*/
+                        /*Section Recherche*/
+
+                        
+.disabled{
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+/*footer*/
 
 .info{
   list-style-type: none;
