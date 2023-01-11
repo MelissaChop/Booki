@@ -42,15 +42,27 @@ flex: 50%;
 text-align: center;
 color:black;
 size:16px;
+position:relative;
 }
 
 .lien:hover{
-  border-top:  2px solid #0065FC;
-  /*text-decoration: overline 2px solid #0065FC;*/
-  color: #0065FC;
-  padding: 48px;
-  margin: -48px;
+  color:#0065FC;
 }
+
+.lien::before{
+  content:"";
+  position: absolute;
+  border-top: 2px solid #0065FC;
+  left: 0px;
+  right: 0px;
+  top: -48px;
+  visibility: hidden;
+}
+
+.lien:hover::before{
+  visibility: visible;
+}
+
 .info{
   list-style-type: none;
 }
