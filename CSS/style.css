@@ -52,8 +52,8 @@ position:relative;
 
 .lien::before{
   content:"";
-  position: absolute;
   border-top: 2px solid #0065FC;
+  position: absolute;
   left: 0px;
   right: 0px;
   margin-top: -48px;
@@ -71,7 +71,7 @@ main{
                         /*Section Recherche*/
 /*Titre*/
 h1{
-font-family: Raleway;
+font-family: 'Raleway';
 font-size: 22px;
 font-weight: 700;
 height: 26px;
@@ -82,17 +82,101 @@ vertical-align: Top;
 }
 
 p{
-font-family: Raleway;
+font-family: 'Raleway';
 font-size: 16px;
 height: 19px;
-text-align: Left;
-vertical-align: Top;
 }
 
+.rectangle{
+  display: flex;
+  width: 332px;
+  height: 49px;
+  background : #F2F2F2;
+  border-radius: 15px 15px 15px 15px;
+  
+}
+
+.fa-location-dot::before {
+  display: flex;
+  width: 14px;
+  height: 18px;
+  color:black;
+}
+
+#ville{
+  border: 1px solid #F2F2F2;
+  box-shadow: none; 
+  margin-left: 25px;
+  font-family: 'Raleway 700';
+  font-size: 18px;
+}
 
 .disabled{
+  font-family: 'Raleway 700 bold';
   cursor: not-allowed;
+  border: 1px solid  #F2F2F2;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #0065FC;
+  font-size: 18px;
+  text-align: center;
+  line-height: 21.13px;
+  color:white;
+
 }
+
+/* FILTRE*/
+
+#filtre{
+  display: flex;
+  width:914px ;
+  height:50px ;
+  justify-content: space-between;
+  margin:25px;
+}
+.boutonfiltre{
+  display:flex;
+  border: 2px solid #F2F2F2;
+  background-color: white;
+  font-family: 'Raleway 700 blod';
+  font-size: 17px;
+  line-height: 20px;
+ gap:15px;
+ 
+  
+  width: 226px;
+  height: 50px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.titrefiltre{
+  width: 54px;
+  height: 21px;
+  font-family: 'Raleway';
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 21px;
+  line-height: 100%;
+  align-items: center;
+  vertical-align: Top;
+
+}
+
+.fa-solid{
+  color:#0065FC;
+  width: 24px;
+  height: 24px;
+}
+
+#ligneinfo{
+  font-family:'Raleway 400' ;
+  display:flex;
+  width: 412px;
+  height: 19x;
+  font-size:16px;
+
+}
+
+
 
 
 
@@ -101,8 +185,10 @@ vertical-align: Top;
 
 /*footer*/
 footer{
+  position:fixed;
   margin:48px;
 }
 .info{
   list-style-type: none;
+  display: flex;
 }
