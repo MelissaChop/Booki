@@ -67,9 +67,7 @@ position:relative;
 }
 
 /*Main*/
-main{
-  
-}
+
                         /*Section Recherche*/
 .recherche{
   margin:55px;
@@ -248,6 +246,97 @@ height: 19px;
 /*Herbergement */
 .hebergement{
   margin: 50px;
+  width: 880px;
+  height: 626px;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tlg{
+  min-width: 278px;
+  height: 26;
+  padding-left: 40px;
+  padding-top: 42px;
+  font-weight: 700;
+  font-size: 22px;
+  font-style: bold;
+  margin-right: 562px;
+}
+
+.bt1{
+width: 246px;
+height: 199px;
+background-color: #ffffff;
+border-radius: 20px 20px 20px 20px;
+border:5px solid #ffffff;
+text-align: left;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.bt2{
+  max-width: 246px;
+  max-height: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.log1{
+ max-width: 246px;
+ max-height: 124px;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: 20px 20px 0px 0px;
+}
+ 
+.st1{
+ width: 204px;
+ height: 15px;
+ font-size: 16px;
+ font-weight: 700;
+ margin: 0px;
+}
+
+.prix1{
+  width: 204px;
+  height: 15px;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0px;
+}
+
+.et1{
+  width: 68px;
+  height: 12px;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+.fa-star{
+width: 12px;
+height: 12px;
+color: #0065FC;
+margin-left: 2px;
+padding-bottom: 11px;
+}
+
+.fa-star+.fa-star+.fa-star+.fa-star+.fa-star{
+  color: #f2f2f2;
+}
+
+.afflien{
+  margin-left: 44px;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
 }
 
 /*Populaire*/
