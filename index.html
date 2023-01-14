@@ -29,28 +29,28 @@
         </header>
 
         <main>
-                <section><!--Recherches-->
+                <section class="recherche"><!--Recherches-->
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre-ville ou en pleine nature</p>
                         <form class="rectangle">
-                                <i class="fa-sharp fa-solid fa-location-dot" id="logo" ></i> 
-                                <input type="search" name="ville" id="ville" placeholder="Nom de la ville"/>
+                                <span class="ico"><i class="fa-sharp fa-solid fa-location-dot"></i> </span>
+                                <input type="search" name="ville" class="ville" placeholder="Nom de la ville"/>
                                 <button type="submit" href="#" class="disabled">Rechercher</button>                               
                         </form>
-                        <div id="filtre">
-                                <h2 class="titrefiltre">Filtre</h2>
-                                        <button type="submit" class="boutonfiltre"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                                        <button type="submit" class="boutonfiltre"><i class="fa-solid fa-person"></i>Familial</button>
-                                        <button type="submit" class="boutonfiltre"><i class="fa-solid fa-heart" ></i>Romantique</button>
-                                        <button type="submit" class="boutonfiltre"><i class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
+                        <div class="filtre">
+                                <h2 class="titref">Filtre</h2>
+                                        <button type="submit" class="boutonf"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+                                        <button type="submit" class="boutonf"><i class="fa-solid fa-person"></i>Familial</button>
+                                        <button type="submit" class="boutonf"><i class="fa-solid fa-heart" ></i>Romantique</button>
+                                        <button type="submit" class="boutonf1"><i class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
                         </div>
                         <div>
-                                <p id="ligneinfo"><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                                <p class="ligneinfo"><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
                         </div>
                 </section>
                 
                 <section class="hebergement"><!--Hebergement a Marseille-->
-                                <a href="#" name="hebergement"><button type="button" class="titre"><h1>Hébergements à Marseille</h1></button></a>
+                                <a name="hebergement"><h1>Hébergements à Marseille</h1></a>
                                          <div>
                                         <button type="button" class="logement">
                                                 <a href="#">
@@ -153,7 +153,7 @@
 
 
                 <article class="populaire"><!--Les plus populaires-->
-                                        <a href="#"><button type="button" class="titre"><h1>Les plus populaires</h1></button></a>
+                                        <a href="#"><h1>Les plus populaires</h1></a>
                                         <i class="fa-solid fa-chart-line"></i> 
                                                  <div>
                                                 <button type="button" class="logement">
@@ -206,30 +206,26 @@
                 </article>
 
                 <section class="activites"> <!--Activités a Marseille-->
-                        <a href="#" name="activite"><button type="button" class="titre"><h1>Activités à Marseille</h1></button></a>
+                        <a name="activite"><h1>Activités à Marseille</h1></a>
                         <div>
-                                <button type="button" class="sortie">
                                         <a href="#">
                                         <img src="Images Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port"/>
                                         <h3>Vieux-Port</h3> 
                                         </a>  
                         </div>
                         <div>
-                                <button type="button" class="sortie">
                                         <a href="#">
                                         <img src="Images Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort"/>
                                         <h3>Fort de Pomègues</h3> 
                                         </a>  
                         </div>
                         <div>
-                                <button type="button" class="sortie">
                                         <a href="#">
                                         <img src="Images Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques"/>
                                         <h3>Parc national des Calanques</h3> 
                                         </a>  
                         </div>
                         <div>
-                                <button type="button" class="sortie">
                                         <a href="#">
                                         <img src="Images Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Monument"/>
                                         <h3>Notre-Dame-de-la-Garde</h3> 
@@ -241,7 +237,7 @@
         <footer>
         <div >
                 <h2>À propos</h2>
-                <ul class="info">
+                <ul class="info3">
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales </a></li>     
                         <li><a href="#">Données et confidentialité</a></li>
@@ -249,14 +245,14 @@
         </div>
         <div >     
                 <h2>Nos hébergements</h2>  
-                <ul class="info">
+                <ul class="info3">
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Proposer votre hôtel</a></li>     
                 </ul>
         </div>
         <div>
                 <h2>Assistance</h2>
-                <ul class="info">
+                <ul class="info3">
                         <li><a href="#">Centre d’aide</a></li>
                         <li><a href="#">Nous contacter</a></li>     
                 </ul>
