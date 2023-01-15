@@ -6,11 +6,12 @@ html {
   box-sizing: border-box;
   width: 1400px;
   font-family: 'Raleway', sans-serif;
+  padding: 50px;
 }
+  
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 
 
 
@@ -22,7 +23,7 @@ header{
   display: flex;
   justify-content: space-between;
   line-height: 19px;
-  margin: 55px;
+  margin: 5px;
   text-align: center;
 }
 
@@ -68,16 +69,19 @@ position:relative;
 /*Main*/
 
 .sections{
-  width: 1400px;
+  width: 1340px;
+  height: 626px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   gap: 29px;
+  margin-bottom: 60px;
+  margin-top: 37px;
 }
 
                         /*Section Recherche*/
 .recherche{
-  margin-left:55px;
+  margin-left:5px;
 }
 
 
@@ -257,10 +261,6 @@ height: 19px;
 
 /*Herbergement */
 .hebergement{
-  margin-left: 50px;
-  margin-top: 23px;
-  margin-bottom: 60px;
-  padding: 10px;
   width: 880px;
   height: 626px;
   background-color: #F2F2F2;
@@ -278,8 +278,8 @@ height: 19px;
   font-style: bold;
   margin-left: 30px;
   margin-right: 562px;
-  margin-bottom: 13px;
-  margin-top: 12px;
+  margin-bottom: 23px;
+  margin-top: 28px;
 }
 
 .bt1{
@@ -288,6 +288,7 @@ height: 199px;
 background-color: #ffffff;
 border-radius: 20px 20px 20px 20px;
 border:5px solid #ffffff;
+box-shadow: 5px 5px 10px grey;
 text-align: left;
 overflow: hidden;
 display: flex;
@@ -371,9 +372,6 @@ padding-bottom: 11px;
 
 /*Populaire*/
 .populaire{
-  margin-right: 50px;
-  margin-top: 23px;
-  padding: 10px;
   width: 420px;
   height: 625px;
   background-color: #F2F2F2;
@@ -390,7 +388,7 @@ padding-bottom: 11px;
   font-weight: 700;
   font-size: 22px;
   font-style: bold;
-  margin-top:31px;
+  margin-top:41px;
   margin-left: 27px;
   margin-bottom: 16px;
 }
@@ -409,6 +407,7 @@ height: 144px;
 background-color: #ffffff;
 border-radius: 20px 20px 20px 20px;
 border:5px solid #ffffff;
+box-shadow: 5px 5px 10px grey;
 text-align: left;
 overflow: hidden;
 display: flex;
@@ -470,15 +469,13 @@ margin-right: 30px;
 }
 /*Activite*/
 .activites{
-  margin-left: 50px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 43px;
 }
 
 .tlg3{
   margin-top: 22px;
-  margin-left: 50px;
   margin-bottom: 18.47px;
 }
 
@@ -487,6 +484,7 @@ margin-right: 30px;
   height: 444px;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 5px 10px grey;
   text-align: left;
   overflow: hidden;
   display: flex;
@@ -521,7 +519,7 @@ footer{
   width: 1339px;
   height: 225px;
   background-color: #f2f2f2;
-  margin-left:48px;
+ /* margin-left:48px;*/
   margin-top: 48px;
   display: flex;
   flex-direction: row;
@@ -529,11 +527,11 @@ footer{
 }
 
 .info3{
+  width: 194px;
+  height: 81px ;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 12px;
+  text-align: left;
+
 }
 
 .tlg4{
@@ -543,15 +541,17 @@ footer{
   height: 21px;
   font-weight: 700;
   font-size: 16px;
-
 }
 
 .inf{
+  line-height: 19px;
+  width: 194px;
   margin-left: 30px;
-  height: 19px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
   text-decoration: none;
   color: black;
-  font-weight: 400;
-  font-size:16px ;
-
+  display: flex;
+  flex-direction: row;
 }
