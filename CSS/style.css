@@ -1,19 +1,28 @@
 /* Calligraphie*/ /* penser a mettre le font-weight: .. ; celon la partie du projet */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+/*media queries*/
+/*Ordinateur*/
+@media (max-width:1440px)
+{
+  html{
+    max-width: 1440px;
+    overflow: auto;
+  }
+
 /*Box-sizing*/
 html {
   box-sizing: border-box;
-  width: 1400px;
+  width: 1440px;
   font-family: 'Raleway', sans-serif;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
 }
   
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-
 
 
 /*Header*/
@@ -70,12 +79,12 @@ position:relative;
 
 .sections{
   width: 1340px;
-  height: 626px;
+  height: 1246px;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
-  gap: 29px;
-  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
   margin-top: 37px;
 }
 
@@ -378,11 +387,21 @@ padding-bottom: 11px;
   border: 1px solid #F2F2F2;
   border-radius: 20px 20px 20px 20px;
   display: flex;
-  flex-wrap: wrap;
-
+  flex-direction: column;
 }
 
-.tlg2{
+.populaire2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titpop{
+  display: flex;
+  flex-wrap: nowrap;
+  gap:118px;
+}
+
+.tlg2{  
   min-width: 205px;
   height: 26px;
   font-weight: 700;
@@ -397,8 +416,8 @@ padding-bottom: 11px;
   width: 18px;
   height: 15.75px;
   color: #0065FC;
-  margin-left: 118px;
-  margin-top: 36px;
+  margin-top: 46px;
+  margin-right: 42px;
 }
 
 .logement{
@@ -475,13 +494,13 @@ margin-right: 30px;
 }
 
 .tlg3{
-  margin-top: 22px;
+  margin-top: 20px;
   margin-bottom: 18.47px;
 }
 
 .loisir{
   width: 302px;
-  height: 444px;
+  height: 445px;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 5px 10px grey;
@@ -519,39 +538,132 @@ footer{
   width: 1339px;
   height: 225px;
   background-color: #f2f2f2;
- /* margin-left:48px;*/
-  margin-top: 48px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
-  gap: 230px;
 }
 
-.info3{
-  width: 194px;
-  height: 81px ;
-  list-style-type: none;
-  text-align: left;
-
+.liste{
+  width: 942px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tlg4{
   margin-left: 70px;
   margin-top: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   height: 21px;
   font-weight: 700;
   font-size: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.info3{
+  width: 194px;
+  height: 81px ;
+  list-style-type: none; 
+  margin:0px;
 }
 
 .inf{
   line-height: 19px;
   width: 194px;
   margin-left: 30px;
-  margin-bottom: 12px;
+  margin-top: 12px;
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
+  font-style: normal;
   color: black;
   display: flex;
   flex-direction: row;
+}
+}
+
+
+/* TABLETTE*/
+@media (min-width:768px) and (max-width:991px)
+{
+html{
+  width: 1024px;
+  padding-left: 72px;
+  padding-top: 44px;
+  padding-right: 72px;
+  overflow: auto;
+}
+
+/* en-tête */
+
+
+.lien:hover::before {
+visibility: hidden;
+}
+
+/* main */
+
+.sections{
+  width:883px;
+  height: 1288px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+/*Hebergement*/
+.hebergement{
+  width:880px;
+  height: 626px;
+}
+
+/*Populaire*/
+.populaire{
+  width: 883px;
+  height: 279px;
+}
+
+.populaire2{
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+.titpop{
+  gap:579px;
+}
+
+.logement{
+  width:252px;
+  height: 144px;
+}
+
+.log2{
+  width: 106px;
+  height: 144px;
+}
+
+.bt3{
+  width: 120px;
+  height: 132px;
+}
+
+.st2{
+  max-width: 111px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Footer*/
+footer{
+  width: 880px;
+  height:225px
+}
+
+}
+
+/*Telephone portable*/
+@media handheld (max-width:767px)
+{
+
 }
