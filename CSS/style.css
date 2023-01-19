@@ -7,17 +7,18 @@
 {
   html{
     width: 1440px;
-    /*overflow: auto;*/
   }
 
 /*Box-sizing*/
-html {
+
+body{
   box-sizing: border-box;
-  width: 1440px;
+  max-width: 1400px;
   font-family: 'Raleway', sans-serif;
-  padding-left: 50px;
+  margin: auto;
+  /*padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
+  padding-top: 50px;*/
 }
   
 *, *:before, *:after {
@@ -33,9 +34,8 @@ header{
   display: flex;
   justify-content: space-between;
   line-height: 19px;
-  margin: 5px;
-  text-align: center;
   margin-bottom: 63px;
+  padding-top: 48px;
 }
 
 .Logo {
@@ -47,13 +47,12 @@ nav{
 width: 324px;
 display: flex;
 height: 19px;
-Top: 48px;
-Left: 982px;
 }
 
 .lien{
 flex: 50%;
 text-align: center;
+font-size: 16px;
 color:black;
 size:16px;
 position:relative;
@@ -70,7 +69,7 @@ text-decoration: none;
   position: absolute;
   left: 0px;
   right: 0px;
-  margin-top: -55px;
+  margin-top: -48px;
   visibility: hidden;
 }
 
@@ -81,7 +80,7 @@ text-decoration: none;
 /*Main*/
 
 .sections{
-  width: 1340px;
+  width: 1400px;
   height: 1246px;
   overflow: visible;
   display: flex;
@@ -95,7 +94,9 @@ text-decoration: none;
 
                         /*Section Recherche*/
 .recherche{
-  margin-left:5px;
+  /*margin-left:5px;*/
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -106,23 +107,23 @@ text-decoration: none;
 font-size: 22px;
 font-weight: 700;
 height: 26px;
-letter-spacing: 0em;
 line-height: 26px;
 text-align: left;
-vertical-align: Top;
+margin: 0px;
 }
 
-p{
+.recherche p{
 font-weight: 400;
 font-size: 16px;
 height: 19px;
+margin-top: 8px;
 }
 
 .rectangle{
   width: 418px;
   height: 49px;
   display: flex;
-  margin-top: 4px;
+  margin-bottom: 32px;
 }
 
 .ico{
@@ -168,48 +169,14 @@ height: 19px;
 
 /* FILTRE*/
 
-.filtre{
+.filtre2{
   display: flex;
-  width:914px ;
-  height:50px ;
-  margin-left:7px;
-  margin-top: 31px;
+  width: 914px;
+  height: 50px;
   margin-bottom: 35px;
 }
- 
 
-.boutonf{
-  border: 2px solid #d9d9d9;
-  background-color: white;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  margin-left: 36px;
-  width: 226px;
-  height: 50px;
-  border-radius: 25px 25px 25px 25px;
-}
-
-.boutonf1{
-  font-weight: bold;
-  font-size: 17px;
-  margin-left: 36px;
-  border: 2px solid #d9d9d9;
-  background-color: white;
-  width: 278px;
-  height: 50px;
-  border-radius: 25px 25px 25px 25px;
-}
-
-.boutonf:hover{
-  background-color: #DEEBFF;
-}
-
-.boutonf1:hover{
-  background-color: #DEEBFF;
-}
-
-.titref{
+.filtre2 h2{
   width: 54px;
   height: 21px;
   font-style: Bold;
@@ -218,28 +185,50 @@ height: 19px;
   line-height: 100%;
   align-items: center;
   vertical-align: Top;
-  
+  margin-right: 30px;
 }
+
+.filtre{
+  display: flex;
+  justify-content: space-between;
+  width: 830px;
+  flex-grow: 1;
+  height: 50px;
+}
+
+.filter{
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+    padding-right: 20px; 
+}
+
+
+.filter:hover{
+  background-color: #DEEBFF;
+}
+
 
 .fa-money-bill-wave{
   color: #0065FC;
   margin-right: 10px;
-  width: 22px;
-  height: 16.26px;
 }
 
 .fa-person{
   color: #0065FC;
-  margin-right: 10px;
-  width: 13.44;
-  height: 22px;
+  margin-right: 14.56px;
+  font-size: 22px;
 }
 
 .fa-heart{
   color: #0065FC;
   margin-right: 10px;
-  width: 22px;
-  height: 18.33px;
+  min-height: 22px;
+  min-height: 18.33px;
 }
 
 .fa-dog{
@@ -258,8 +247,8 @@ height: 19px;
   width: 447px;
   height: 19x;
   font-size:16px;
-  min-width: 372px;
   justify-content: space-between;
+  margin-bottom: 0px;
 }
 
 .fa-info{
@@ -273,17 +262,28 @@ height: 19px;
   align-items: center;
   justify-content: center;
   font-size: small;
+  margin-bottom: 0px;
+
 }
 
 /*Herbergement */
-.hebergement{
-  width: 880px;
-  height: 626px;
+.sechebergement{
+  width: 882px;
+  height: 628px;
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
   border-radius: 20px 20px 20px 20px;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 14px;
+}
+
+.boitehebergement1{
+  display:flex;
   flex-wrap: wrap;
+  max-width: 882px;
+  min-height: 428px;
 }
 
 .tlg1{
@@ -292,10 +292,9 @@ height: 19px;
   font-weight: 700;
   font-size: 22px;
   font-style: bold;
-  margin-left: 30px;
-  margin-right: 562px;
+  margin-left: 26px;
   margin-bottom: 23px;
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .bt1{
@@ -305,15 +304,13 @@ background-color: #ffffff;
 border-radius: 20px 20px 20px 20px;
 border:5px solid #ffffff;
 box-shadow: 5px 5px 10px grey;
-text-align: left;
-overflow: hidden;
 display: flex;
 flex-direction: column;
 gap: 4px;
 text-decoration: none !important;
 color: black;
-margin-left: 31px;
-margin-bottom: 30px;
+margin-left: 21px;
+margin-bottom: 20px;
 
 }
 
@@ -378,9 +375,9 @@ padding-bottom: 11px;
 .afflien{
   width: 107px;
   height: 21px;
-  margin-bottom: 36px;
-  margin-left: 34px;
-  margin-top: 10px;
+  margin-bottom: 44px;
+  margin-left: 30px;
+  margin-top: 20px;
   font-size: 18px;
   font-weight: 700;
   color: black;
@@ -417,7 +414,7 @@ padding-bottom: 11px;
   font-style: bold;
   margin-top:41px;
   margin-left: 27px;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
 }
 
 .fa-chart-line{
