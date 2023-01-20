@@ -199,10 +199,12 @@ margin-top: 8px;
 .filter{
     font-weight: bold;
     font-size: 17px;
+    width: auto;
     border: 2px solid #d9d9d9;
     border-radius: 25px 25px 25px 25px;
     display: flex;
     align-items: center;
+    align-content: flex-start;
     padding-left:20px;
     padding-right: 20px; 
 }
@@ -216,7 +218,10 @@ margin-top: 8px;
 .fa-money-bill-wave{
   color: #0065FC;
   margin-right: 10px;
+  min-width: 22px;
+  min-height: 16.26px;
 }
+
 
 .fa-person{
   color: #0065FC;
@@ -502,7 +507,14 @@ margin-right: 30px;
 }
 
 /*Activite*/
-.activites{
+.activite1{
+  width: 1337px;
+  height: 493px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activite2{
   display: flex;
   flex-direction: row;
   gap: 43px;
@@ -512,7 +524,7 @@ margin-right: 30px;
   width: 212px;
   height:31px;
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 18.47px;
 }
 
@@ -618,7 +630,7 @@ html{
 /* en-tête */
 header{
   width: 881px;
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }
 
 nav{
@@ -638,7 +650,7 @@ visibility: hidden;
   width: 406px;
 }
 
-.filtre{
+.filtre2{
   width: 846px;
 }
 
@@ -656,6 +668,7 @@ visibility: hidden;
   flex-wrap: nowrap;
   flex-direction: column;
   gap:0px;
+  margin-top: 20px;
 }
 
 /*Hebergement*/
@@ -785,10 +798,10 @@ padding-bottom: 11px;
   width: 212px;
   height:30px;
   margin-top: 60px;
-  margin-bottom: 18.47px;
+  margin-bottom: 34px;
 }
 
-.activites{
+.activite2{
   max-width: 878px;
   max-height: 267px;
   gap:50px;
@@ -839,6 +852,7 @@ footer{
   margin: 0px;
   gap:82px;
   margin-top: 90px;
+  padding-left: 33.5px;
 }
 
 .liste{
@@ -848,7 +862,340 @@ footer{
 }
 
 /*Telephone portable*/
-@media handheld: (max-width:767px)
+@media (max-width:767px)
 {
+  html{
+    width: 375px;
+  }
+  
+  
+  /* en-tête */
+  header{
+    width: 375px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    padding-top: 21px;
+    align-items: center;
+  }
+  
+  nav{
+    width: 375px;
+    height: 43;
+    Top: 48px;
+    Left: 709px;
+  }
 
+  .lien{
+    height: 17.35px;
+    line-height: 18.78px;
+    padding-bottom: 43px;
+    border-bottom: 3px solid #F2F2F2;
+  }
+    
+    .lien:hover{
+      color:#0065FC;
+    }
+    
+    .lien::before{
+      border-bottom: 3px solid #0065FC;
+      margin-top: 43px;
+      visibility: hidden;
+    }
+
+  
+  /* main */
+
+   /*Recherche*/
+.recherche{
+  padding-left: 20px;
+}
+   .tlg0{
+    width: 298px;
+    height: 52px;
+    margin-top: 52px;
+   }
+
+   .recherche p{
+    width: 315px;
+    margin-top: 13px;
+    margin-bottom: 0px;
+   }
+
+  .rectangle{
+    width: 332px;
+    height: 49px;
+    margin-top: 36px;
+    margin-bottom: 34px;
+  }
+  
+  .filtre2{
+    flex-direction: column;
+    width: 375px;
+    height: inherit;
+  }
+
+  .filtre{
+    width: 334px;
+    height: 117px;
+    flex-wrap: wrap;
+    gap:14px;
+  }
+
+  .filter{
+    height: 50px;
+    width: 160px;
+    font-size: 11px;
+    padding-left: 13px;
+    padding-right: 0px;
+  }
+
+  .filtre2 .filtre i{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.fa-money-bill-wave{
+  min-width: 21px;
+  min-height: 14.78px;
+}
+
+
+.fa-person{
+ min-width: 13.44px;
+  min-height: 22px;
+}
+
+.fa-heart{
+min-width: 22px;
+  min-height: 18.33px;
+}
+
+.fa-dog{
+min-width: 21px;
+  min-height: 20px;
+}
+
+  .ligneinfo{
+    width: 298px;
+    height: 57px;
+    display: flex;
+    gap:11px;
+  }
+
+p.ligneinfo{
+  width: 333px;
+}
+
+i.fa-solid.fa-info{
+   min-width: 24px;
+    height: 24px;
+}
+
+
+  
+  /*Sections*/
+   
+  .sections{
+    width:883px;
+    min-height: 1288px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap:0px;
+    margin-top: 20px;
+  }
+  
+  /*Hebergement*/
+  .hebergement{
+    width:880px;
+    min-height: 626px;
+  }
+  
+  .tlg1{
+    min-width: 279px;
+    height: 26px;
+  }
+  
+  
+  .fa-star{
+  width: 12px;
+  height: 12px;
+  color: #0065FC;
+  margin-left: 2px;
+  padding-bottom: 11px;
+  
+  }
+  
+  
+  .afflien{
+    width: 107px;
+    height: 21px;
+    margin-bottom: 36px;
+    margin-left: 34px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none !important;
+  }
+  
+  /*Populaire*/
+  .tlg2{
+    margin-top: 34px;
+    width: 206px;
+    margin-left: 0px;
+    margin-bottom: 26px;
+  }
+  
+  .fa-chart-line{
+    width: 18px;
+    height: 16px;
+  }
+  
+  .populaire{
+    min-width: 885px;
+    min-height: 278px;
+    padding-left: 40px;
+    padding-right: 18px;
+    margin-top: 53px;
+  }
+  
+  .populaire2{
+    width: 757px;
+    height: 144px;
+    display:flex;
+    flex-wrap: nowrap;
+  }
+  
+  .titpop{
+    gap:579px;
+  }
+  
+  .logement{
+    min-width:252px;
+    min-height: 144px;
+    margin-left: 0px;
+    margin-right: 23px;
+  }
+  
+  .log2{
+    width: 106px;
+    height: 144px;
+  }
+  
+  .bt3{
+    width: 146px;
+    height: 144px;
+    margin-left: 5px;
+    gap:7px;
+  }
+  
+  .st2{
+    max-width: 111px;
+    height: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin: 0px;
+  }
+  
+  .prix2{
+    width: 130px;
+    height: 32px;
+    font-size: 13px;
+  }
+  
+  .et2{
+    width: 68px;
+    height: 12px;
+    display: flex;
+    align-items: flex-end;
+    margin-left:0px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+  }
+  
+  .et3{
+    width: 68px;
+    height: 12px;
+    display: flex;
+    align-items: flex-end;
+    margin-left:0px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+  }
+  
+  /*Activites*/
+  
+  
+  .tlg3{
+    width: 212px;
+    height:30px;
+    margin-top: 60px;
+    margin-bottom: 34px;
+  }
+  
+  .activite2{
+    max-width: 878px;
+    max-height: 267px;
+    gap:50px;
+  }
+  
+  .loisir{
+    max-width: 182px;
+    max-height: 267px;
+  }
+  .act1{
+    max-width: 182px;
+    min-height: 211px;
+  }
+  
+  .st3{
+    max-width: 182px;
+    min-height: 56px;
+    font-size: 16px;
+    margin: 0px;
+    padding-bottom: 21px;
+  }
+  
+  .st4{
+    max-width: 182px;
+    min-height: 56px;
+    padding-top: 9px;
+    padding-right: 27px;
+    padding-bottom: 7px;
+    font-size: 16px;
+  }
+  
+  .st5{
+    max-width: 182px;
+    min-height: 56px;
+    padding-top: 7px;
+    padding-right: 36px;
+    padding-bottom: 11px;
+    font-size: 16px;
+  
+  }
+  
+  
+  
+  /*Footer*/
+  footer{
+    width: 880px;
+    height:225px;
+    margin: 0px;
+    gap:82px;
+    margin-top: 90px;
+    padding-left: 33.5px;
+  }
+  
+  .liste{
+    width: 192px;
+    height: 122px;
+  }
 }
