@@ -112,7 +112,7 @@ text-align: left;
 margin: 0px;
 }
 
-.recherche p{
+.recherche1{
 font-weight: 400;
 font-size: 16px;
 height: 19px;
@@ -165,6 +165,9 @@ margin-top: 8px;
   text-align: center;
   line-height: 21.13px;
   color:white;
+}
+.fa-magnifying-glass{
+  display: none;
 }
 
 /* FILTRE*/
@@ -244,16 +247,11 @@ margin-top: 8px;
 }
 
 
-
-.ligneinfo{
-  font-weight: 400 ;
-  display:flex;
-  align-items: center;
+.filtre3{
+  display: flex;
+  gap: 11px;
   width: 447px;
-  height: 19x;
-  font-size:16px;
-  justify-content: space-between;
-  margin-bottom: 0px;
+  height: 24px;
 }
 
 .fa-info{
@@ -266,10 +264,19 @@ margin-top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: small;
-  margin-bottom: 0px;
-
+  font-size: 10px;
 }
+
+.ligneinfo{
+  width: 412px;
+  height: 19px;
+  font-weight: 400 ;
+  display: flex;
+  font-size:16px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
 
 /*Herbergement */
 .sechebergement{
@@ -650,14 +657,8 @@ visibility: hidden;
   width: 406px;
 }
 
-.filtre2{
-  width: 846px;
-}
 
-.ligneinfo{
-  margin-top:7px;
-  margin-bottom: 19px;
-}
+
 
 /*Sections*/
  
@@ -866,6 +867,8 @@ footer{
 {
   html{
     width: 375px;
+    height: 4113px;
+    margin-right: 0px;
   }
   
   
@@ -918,18 +921,37 @@ footer{
     margin-top: 52px;
    }
 
-   .recherche p{
-    width: 315px;
-    margin-top: 13px;
-    margin-bottom: 0px;
-   }
-
   .rectangle{
     width: 332px;
     height: 49px;
     margin-top: 36px;
     margin-bottom: 34px;
   }
+
+  .ico{
+    width: 49px;
+    height: 49px;
+  }
+
+  .ville{
+    width: 233px;
+    height: 49px;
+  }
+
+  .disabled{
+    width: 51px;
+    height: 51px;
+    padding: 0px;
+  }
+
+  .fa-magnifying-glass{
+    display: inline-block;
+    font-size: 17px;
+  }
+  .mot{
+    display: none;
+  }
+ 
   
   .filtre2{
     flex-direction: column;
@@ -962,6 +984,7 @@ footer{
 .fa-money-bill-wave{
   min-width: 21px;
   min-height: 14.78px;
+  font-size: 21px;
 }
 
 
@@ -973,44 +996,45 @@ footer{
 .fa-heart{
 min-width: 22px;
   min-height: 18.33px;
+  font-size: 22px;
 }
 
 .fa-dog{
 min-width: 21px;
   min-height: 20px;
+  font-size: 21px;
+}
+
+.filtre3{
+  width: 333px;
+  height: 57px;
+  margin-bottom: 17px;
 }
 
   .ligneinfo{
     width: 298px;
     height: 57px;
     display: flex;
-    gap:11px;
+    flex-wrap: wrap;
   }
 
-p.ligneinfo{
-  width: 333px;
-}
 
-i.fa-solid.fa-info{
-   min-width: 24px;
-    height: 24px;
-}
-
-
-  
   /*Sections*/
    
   .sections{
-    width:883px;
+    width:875px;
     min-height: 1288px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     gap:0px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   /*Hebergement*/
+.sechebergement{
+  order: 1;
+}
   .hebergement{
     width:880px;
     min-height: 626px;
@@ -1045,42 +1069,49 @@ i.fa-solid.fa-info{
   }
   
   /*Populaire*/
+  .populaire{
+    max-width: 375px;
+    min-height: 580px;
+    margin-top: 17px;
+    padding-left: 20px;
+    padding-right: 21px;
+    text-align: center;
+  }
+  .populaire2{
+    max-width: 334px;
+    height: 453px;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
   .tlg2{
-    margin-top: 34px;
-    width: 206px;
-    margin-left: 0px;
-    margin-bottom: 26px;
+    width: 262px;
+    height: 26px;
+    margin: 0px;
+    text-align: start;
   }
   
   .fa-chart-line{
     width: 18px;
     height: 16px;
-  }
-  
-  .populaire{
-    min-width: 885px;
-    min-height: 278px;
-    padding-left: 40px;
-    padding-right: 18px;
-    margin-top: 53px;
-  }
-  
-  .populaire2{
-    width: 757px;
-    height: 144px;
-    display:flex;
-    flex-wrap: nowrap;
+    margin: 0px;
+    margin-top: 7px;
   }
   
   .titpop{
-    gap:579px;
+    max-width:334px ;
+    height: 26px;
+    margin-top: 28px;
+    margin-bottom: 26px;
+    gap: 54px;
   }
   
   .logement{
-    min-width:252px;
-    min-height: 144px;
+    max-width:324px;
+    min-height: 154px;
     margin-left: 0px;
-    margin-right: 23px;
+    margin-right: 0px;
   }
   
   .log2{
@@ -1131,7 +1162,9 @@ i.fa-solid.fa-info{
   }
   
   /*Activites*/
-  
+  .activite1{
+    order: 1;
+  }
   
   .tlg3{
     width: 212px;
