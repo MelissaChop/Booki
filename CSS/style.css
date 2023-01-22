@@ -128,18 +128,17 @@ margin-bottom: 20px;
 }
 
 .ico{
-  width: 50px;
+  min-width: 50px;
   height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
   background : #F2F2F2;
   border-radius: 15px 0px 0px 15px;
-  margin-right: auto;
 }
 
 .ville{
-  max-width: 286px;
+  width: 286px;
   height: 49;
   border: 1px solid #F2F2F2;
   box-shadow: none; 
