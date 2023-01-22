@@ -139,7 +139,7 @@ margin-bottom: 20px;
 }
 
 .ville{
-  width: 282px;
+  max-width: 286px;
   height: 49;
   border: 1px solid #F2F2F2;
   box-shadow: none; 
@@ -157,6 +157,8 @@ margin-bottom: 20px;
 }
 
 .disabled{
+  min-width: 132px;
+  height: 49px;
   font-weight: 700;
   cursor: not-allowed;
   border: 1px solid  #F2F2F2;
