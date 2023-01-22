@@ -534,7 +534,7 @@ margin-right: 30px;
 }
 
 .tlg3{
-  width: 212px;
+  min-width: 212px;
   height:31px;
   font-size: 22px;
   margin-top: 0px;
