@@ -517,7 +517,7 @@ margin-right: 30px;
 /*Activite*/
 .activite1{
   min-width: 1400px;
-  height: 493px;
+  max-height: 493px;
   display: flex;
   flex-direction: column;
   margin-left: 50px;
@@ -527,7 +527,6 @@ margin-right: 30px;
   display: flex;
   flex-direction: row;
   gap: 43px;
-  min-height: 445px;
 }
 
 .tlg3{
@@ -540,7 +539,7 @@ margin-right: 30px;
 
 .loisir{
   min-width: 302px;
-  min-height: 445px;
+  max-height: 445px;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 2px 2px 5px grey;
@@ -642,6 +641,7 @@ html{
 header{
   width: 881px;
   margin-bottom: 54px;
+  padding-left: 0px;
 }
 
 nav{
@@ -657,6 +657,11 @@ visibility: hidden;
 /* main */
 
 /*Recherche*/
+
+.recherche{
+  padding-left: 0px;
+}
+
 .rectangle{
   width: 406px;
 }
@@ -667,7 +672,7 @@ visibility: hidden;
 /*Sections*/
  
 .sections{
-  width:883px;
+  max-width:883px;
   min-height: 1288px;
   display: flex;
   flex-wrap: nowrap;
@@ -680,6 +685,7 @@ visibility: hidden;
 .sechebergement{
   width:880px;
   min-height: 626px;
+  margin-left: 0px;
 }
 
 .tlg1{
@@ -797,7 +803,10 @@ padding-bottom: 11px;
 }
 
 /*Activites*/
-
+.activite1{
+  margin-left: 0px;
+  max-height: 331px;
+}
 
 .tlg3{
   width: 212px;
@@ -808,22 +817,22 @@ padding-bottom: 11px;
 
 .activite2{
   max-width: 878px;
-  max-height: 267px;
+ height: 267px ;
   gap:50px;
 }
 
 .loisir{
-  max-width: 182px;
+  min-width: 182px;
   max-height: 267px;
 }
 .act1{
   max-width: 182px;
-  min-height: 211px;
+  max-height: 211px;
 }
 
 .st3{
   max-width: 182px;
-  min-height: 56px;
+  max-height: 56px;
   font-size: 16px;
   margin: 0px;
   padding-bottom: 21px;
@@ -831,7 +840,7 @@ padding-bottom: 11px;
 
 .st4{
   max-width: 182px;
-  min-height: 56px;
+  max-height: 56px;
   padding-top: 9px;
   padding-right: 27px;
   padding-bottom: 7px;
@@ -840,7 +849,7 @@ padding-bottom: 11px;
 
 .st5{
   max-width: 182px;
-  min-height: 56px;
+  max-height: 56px;
   padding-top: 7px;
   padding-right: 36px;
   padding-bottom: 11px;
@@ -886,6 +895,7 @@ footer{
     justify-content: space-between;
     padding-top: 21px;
     align-items: center;
+    padding-left: 0px;
   }
   
   nav{
@@ -893,6 +903,7 @@ footer{
     height: 43;
     Top: 48px;
     Left: 709px;
+    padding-left: 0px;
   }
 
   .lien{
@@ -1049,6 +1060,7 @@ text-align: center;
 padding-left: 20px;
 padding-right: 20px;
 margin-bottom: 161px;
+margin-left: 0px;
 }
 
 .bt1{
@@ -1203,6 +1215,7 @@ margin-bottom: 161px;
   /*Activites*/
   .activite1{
     order: 1;
+    margin-left: 0px;
   }
  
 
