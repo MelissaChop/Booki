@@ -5,8 +5,8 @@
 /*Ordinateur*/
 
   html{
-    max-width: 1440px;
-    height: 1884px;
+    max-width: 1400px;
+    max-height: 1884px;
     margin:auto;
   }
 
@@ -14,11 +14,10 @@
 
 body{
   box-sizing: border-box;
-  width: 1440px;
+  width: 1400px;
   font-family: 'Raleway', sans-serif;
   margin-left: 50px;
   margin-right: 50px;
-  margin-top:0px;
 }
   
 *, *:before, *:after {
@@ -78,11 +77,10 @@ text-decoration: none;
 .sections{
   width: 1340px;
   height: 1179px;
- /* overflow: visible;*/
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  margin-top: 37px;
+  margin-top: 39px;
 }
 
 
@@ -527,11 +525,11 @@ margin-right: 30px;
 
 /*Activite*/
 .activite1{
-  min-width: 1400px;
-  max-height: 493px;
+  width: 1337px;
+  height: 493px;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-top: 60px;
 }
 
 .activite2{
@@ -541,8 +539,8 @@ margin-right: 30px;
 }
 
 .tlg3{
-  min-width: 212px;
-  height:31px;
+  width: 212px;
+  height:30px;
   font-size: 22px;
   margin-top: 0px;
   margin-bottom: 18.47px;
@@ -571,16 +569,12 @@ margin-right: 30px;
 }
 
 .st3,.st4,.st5{
-  max-width: 302px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
+  width: 302px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left:19px;
-  padding-top: 20px;
-  padding-bottom: 21px;
   margin: 0px;
 }
 
@@ -591,28 +585,26 @@ footer{
   width: 1339px;
   height: 225px;
   background-color: #f2f2f2;
-  margin-top: 40px;
+  margin-top: 61px;
   display: flex;
-  flex-direction: row;
-  margin-left: 48px;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 70px;
+  padding-right: 245px;
+  padding-bottom: 58px;
 }
 
 .liste{
-  width: 942px;
+  width: 195px;
   height: 122px;
-  display: flex;
-  flex-direction: column;
 }
 
 .tlg4{
-  margin-left: 40px;
-  margin-top: 45px;
-  margin-bottom: 8px;
   height: 21px;
+  width: 195px;
   font-weight: 700;
   font-size: 16px;
-  display: flex;
-  flex-direction: row;
+  margin: 0px;
 }
 
 .info3{
@@ -620,19 +612,19 @@ footer{
   height: 81px ;
   list-style-type: none; 
   margin:0px;
+  padding: 0px;
+  margin-top: 20px;
 }
 
 .inf{
   line-height: 19px;
-  width: 194px;
-  margin-top: 12px;
+  width: 195px;
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
-  font-style: normal;
   color: black;
   display: flex;
-  flex-direction: row;
 }
 
 /* TABLETTE*/
