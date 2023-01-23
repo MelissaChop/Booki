@@ -3,19 +3,22 @@
 
 /*media queries*/
 /*Ordinateur*/
-@media  
-{
+
   html{
-    width: 1400px;
+    max-width: 1440px;
+    height: 1884px;
+    margin:auto;
   }
 
 /*Box-sizing*/
 
 body{
   box-sizing: border-box;
-  max-width: 1400px;
+  width: 1440px;
   font-family: 'Raleway', sans-serif;
-  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top:0px;
 }
   
 *, *:before, *:after {
@@ -27,65 +30,57 @@ body{
                                   /*EN TETE*/
 
 header{
-  width: 1400px;
+  width: 1335px;
+  max-height: 29px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   line-height: 19px;
-  margin-bottom: 63px;
-  padding-top: 48px;
-  padding-left: 55px;
+  padding-left: 5px;
   
 }
 
 .Logo {
   width: 61.09px;
   height: 19px;
+  margin-top: 44px;
+  margin-bottom: 4px ;
 }
 
 nav{
 width: 381px;
 display: flex;
 height: 19px;
-padding-left: 138px;
+margin-right:0px;
+padding-left: 53px;
 }
 
 .lien{
+min-width: 162px;
 flex: 50%;
-text-align: center;
+padding-top: 48px;
+display: flex;
+justify-content: center;
 font-size: 16px;
 color:black;
-size:16px;
-position:relative;
 text-decoration: none;
 }
 
 .lien:hover{
   color:#0065FC;
-}
-
-.lien::before{
-  content:"";
   border-top: 2px solid #0065FC;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  margin-top: -48px;
-  visibility: hidden;
+  padding-top: 46px;
 }
 
-.lien:hover::before{
-  visibility: visible;
-}
 
 /*Main*/
 
 .sections{
-  width: 1400px;
-  height: 1246px;
-  overflow: visible;
+  width: 1340px;
+  height: 1179px;
+ /* overflow: visible;*/
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   margin-bottom: 20px;
   margin-top: 37px;
 }
@@ -94,9 +89,10 @@ text-decoration: none;
 
                         /*Section Recherche*/
 .recherche{
-  padding-left: 55px;
+  padding-left: 5px;
   display: flex;
   flex-direction: column;
+  margin-top:59px;
 }
 
 
@@ -104,9 +100,10 @@ text-decoration: none;
 /*Titre*/
 
 .tlg0{
+width: 575px;
+height: 26px;
 font-size: 22px;
 font-weight: 700;
-height: 26px;
 line-height: 26px;
 text-align: left;
 margin: 0px;
@@ -115,6 +112,7 @@ margin: 0px;
 .recherche1{
 font-weight: 400;
 font-size: 16px;
+width: 296px;
 height: 19px;
 margin-top: 8px;
 margin-bottom: 20px;
@@ -138,12 +136,13 @@ margin-bottom: 20px;
 }
 
 .ville{
-  width: 286px;
+  width: 236px;
   height: 49;
   border: 1px solid #F2F2F2;
   box-shadow: none; 
   font-weight: 700;
   font-size: 18px;
+  padding: 0px;
 }
 .ville::placeholder{
   width: 147px;
@@ -167,10 +166,11 @@ margin-bottom: 20px;
   text-align: center;
   line-height: 21.13px;
   color:white;
+
 }
 
 
-.ico2{
+.fa-magnifying-glass{
   display: none;
 }
 
@@ -190,8 +190,7 @@ margin-bottom: 20px;
   font-size: 18px;
   line-height: 21px;
   line-height: 100%;
-  align-items: center;
-  vertical-align: Top;
+  text-align: end;
   margin-right: 30px;
 }
 
@@ -256,6 +255,7 @@ margin-bottom: 20px;
   gap: 11px;
   width: 447px;
   height: 24px;
+  margin-left: 4px;
 }
 
 .fa-info{
@@ -291,77 +291,82 @@ margin-bottom: 20px;
   border-radius: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 14px;
-  margin-left: 50px;
+  justify-content: space-between;
+  margin-right: 40px;
+  padding: 40px;
 }
 
 .boitehebergement1{
+  max-width: 800px;
+  max-height: 428px;
   display:flex;
   flex-wrap: wrap;
-  max-width: 882px;
-  min-height: 428px;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .tlg1{
-  min-width: 278px;
+  max-width: 278px;
   height: 26px;
   font-weight: 700;
   font-size: 22px;
   font-style: bold;
-  margin-left: 26px;
   margin-bottom: 23px;
-  margin-top: 40px;
+  margin-top: 2px;
 }
 
 .bt1{
-width: 256px;
-height: 209px;
+width: 246px;
+height: 199px;
 background-color: #ffffff;
 border-radius: 20px 20px 20px 20px;
 border:5px solid #ffffff;
 box-shadow: 5px 5px 10px grey;
 display: flex;
 flex-direction: column;
-gap: 4px;
 text-decoration: none !important;
 color: black;
-margin-left: 21px;
-margin-bottom: 20px;
+margin-bottom: 30px;
 
-}
-
-.bt2{
-  max-width: 246px;
-  max-height: 75px;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  margin-left:11px;
-  margin-bottom: 11px;
-  margin-top: 4px;
 }
 
 .log1{
- max-width: 246px;
- max-height: 124px;
- width: 100%;
- height: 100%;
- object-fit: cover;
- border-radius: 20px 20px 0px 0px;
+  max-width: 236px;
+  max-height: 124px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  padding-bottom: 9px;
+ }
+
+.bt2{
+  width: 236px;
+ height: 75px;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 9px;
+  padding-left:11px;
+ /* padding-top: 9px;*/
+  padding-right: 26px;
 }
+
  
 .st1{
  width: 204px;
  height: 15px;
  font-size: 16px;
  font-weight: 700;
+ line-height: 19px;
  margin: 0px;
 }
 
 .prix1{
   width: 204px;
   height: 15px;
+  line-height: 15px;
   font-size: 14px;
   font-style: normal;
   margin: 0px;
@@ -372,16 +377,17 @@ margin-bottom: 20px;
   width: 68px;
   height: 12px;
   display: flex;
-  flex-direction: row;
   font-size: 12px;
+  margin-bottom: 11px;
 }
 
 .fa-star{
 width: 12px;
 height: 12px;
+font-size: 12px;
 color: #0065FC;
 margin-left: 2px;
-padding-bottom: 11px;
+/*padding-bottom: 11px;*/
 
 }
 
@@ -392,13 +398,13 @@ padding-bottom: 11px;
 .afflien{
   width: 107px;
   height: 21px;
-  margin-bottom: 44px;
-  margin-left: 30px;
-  margin-top: 20px;
   font-size: 18px;
   font-weight: 700;
   color: black;
   text-decoration: none !important;
+  margin-left: 4px;
+  margin-bottom: 6px;
+  margin-top: 40px;
 }
 
 /*Populaire*/
@@ -627,23 +633,18 @@ footer{
   display: flex;
   flex-direction: row;
 }
-}
-
 
 /* TABLETTE*/
-@media (min-width:768px) and (max-width:991px)
+@media screen and (max-width:991px)
 {
 html{
-  width: 1024px;
-  padding-left: 72px;
-  padding-top: 44px;
-  padding-right: 72px;
+ max-width: 1024px;
 }
 
 
 /* en-tête */
 header{
-  width: 881px;
+  /*width: 881px;*/
   margin-bottom: 54px;
   padding-left: 0px;
 }
@@ -889,52 +890,53 @@ footer{
 }
 
 /*Telephone portable*/
-@media (max-width:767px)
+@media screen and (max-width:767px)
 {
   html{
-    width: 375px;
-    height: 4113px;
+   /* width: 375px;
+    height: 4113px;*/
     margin-right: 0px;
   }
   
   
   /* en-tête */
   header{
-    width: 375px;
-    height: 108px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0px;
+    width: 100%;
+    height: 124px;
+    margin-bottom: 31px;
     justify-content: space-between;
-    padding-top: 21px;
-    align-items: center;
-    padding-left: 0px;
-  }
-  
-  nav{
-    width: 375px;
-    height: 43;
-    Top: 48px;
-    Left: 709px;
     padding-left: 0px;
   }
 
+  .Logo{
+    display: flex;
+    margin-left: 42%;
+    margin-top: 21px;
+  }
+  
+  nav{
+    width: 100%;
+    min-height: 43;
+    Top: 48px;
+    Left: 709px;
+    margin-top: 48px;
+  }
+
   .lien{
-    height: 17.35px;
-    line-height: 18.78px;
-    padding-bottom: 43px;
+    min-height: 43px;
     border-bottom: 3px solid #F2F2F2;
+    padding-top: 0px;
+    padding-bottom: 23px;
   }
     
     .lien:hover{
       color:#0065FC;
+      border-top: none;
+      padding-top: 0px;
+      border-bottom: 3px solid #0065FC;
+      padding-bottom: 20px;
     }
     
-    .lien::before{
-      border-bottom: 3px solid #0065FC;
-      margin-top: 43px;
-      visibility: hidden;
-    }
 
   
   /* main */
@@ -946,7 +948,7 @@ footer{
    .tlg0{
     width: 298px;
     height: 52px;
-    margin-top: 52px;
+    margin-top: 0px;
    }
 
   .rectangle{
@@ -966,27 +968,13 @@ footer{
     height: 49px;
   }
 
-.disabled{
-  display: none;
+.fa-magnifying-glass{
+  display: contents;
 }
 
-  .ico2{
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-  width: 51px;
-  height: 51px;
-  font-weight: 700;
-  cursor: not-allowed;
-  border: 1px solid  #F2F2F2;
-  border-radius: 0px 15px 15px 0px;
-  background-color: #0065FC;
-  font-size: 18px;
-  color:white;
-  }
-
+.search{
+  display: none;
+}
 
  
   
@@ -1071,7 +1059,7 @@ min-width: 21px;
   
   /*Hebergement*/
 .sechebergement{
-  order: 1;
+  /*order: 1;*/
  top:1216px;
  width: 375px;
  height:1326px ;
@@ -1137,7 +1125,7 @@ margin-left: 0px;
   
   /*Populaire*/
   .populaire{
-    order: 0 ;
+    order: -1;
     top: 636px;
     max-width: 375px;
     min-height: 580px;
@@ -1236,7 +1224,7 @@ margin-left: 0px;
   
   /*Activites*/
   .activite1{
-    order: 1;
+    /*order: 1;*/
     margin-left: 0px;
   }
  
@@ -1283,7 +1271,7 @@ margin-left: 0px;
   
   /*Footer*/
   footer{
-    position: relative;
+    /*position: relative;*/
     top: 1704px;
     width: 377px;
     height: 501px;
