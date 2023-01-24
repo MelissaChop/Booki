@@ -479,22 +479,25 @@ margin-right: 30px;
 }
 
 .bt3{
-  width: 169px;
-  height: 116px;
+  max-width: 169px;
+  max-height: 144px;
   display:flex;
-  flex-direction: column;
-  margin-top: 5px;
+  flex-wrap: wrap;
   margin-left: 15px;
+}
+
+.loginfo{
+  display: flex;
+  flex-direction: column;
 }
 
 .st2{
   width: 169px;
-  height: 38px;
   font-size: 16px;
   font-weight: 700;
-  margin-top: 6px;
-  margin-bottom: 7px;
+  margin-top: 11px;
   margin-right: 22px;
+  margin-bottom: 7px;
 }
 
 .prix2{
@@ -502,27 +505,18 @@ margin-right: 30px;
   height: 15px;
   font-size: 14px;
   font-style: normal;
-  margin-top: 0px;
+  margin: 0px;
 }
+
 
 .et2{
   width: 68px;
   height: 12px;
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
   font-size: 12px;
-  margin-bottom: 12px;
-  margin-top: 34px;
-}
-
-.et3{
-  width: 68px;
-  height: 12px;
-  display: flex;
-  flex-direction: row;
-  font-size: 12px;
-  margin-bottom: 12px;
-  margin-top: 49px;
+  margin-bottom: 7px;
 }
 
 /*Activite*/
