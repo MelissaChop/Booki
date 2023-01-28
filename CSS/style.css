@@ -3,15 +3,19 @@
 
 
 /*Box-sizing*/
+html{
+  max-width: 1400px;
+}
+
 body{
   
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  max-width: 1400px;
-  margin:auto;
+  max-width: 1340px;
+  /*margin:auto;*/
   margin-top:48px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 2%;
+  margin-right: 2%;
  /* max-width: 100%;
   margin-left: 50px;
   margin-right: 50px;*/
@@ -32,7 +36,7 @@ header{
   justify-content: space-between;
   flex-wrap: wrap;
   line-height: 19px;
-  padding-left: 5px;
+ /* padding-left: 5px;*/
   margin: auto;
   
 }
@@ -85,7 +89,7 @@ text-decoration: none;
 
                         /*Section Recherche*/
 .recherche{
-  padding-left: 5px;
+  /*padding-left: 5px;*/
   display: flex;
   flex-direction: column;
   margin-top:59px;
@@ -174,6 +178,7 @@ margin-bottom: 20px;
   max-width: 914px;
   min-height: 50px;
   margin-bottom: 35px;
+  padding-left: 1%;
 }
 
 .filtre2 h2{
@@ -189,7 +194,7 @@ margin-bottom: 20px;
 .filtre{
   display: flex;
   gap: 3%;
-  width: 100%;
+  max-width: 100%;
   flex-grow: 1;
   height: 50px;
 }
@@ -264,7 +269,7 @@ margin-bottom: 20px;
   background-color: #F2F2F2;
   border: 40px solid #F2F2F2;
   border-radius: 20px 20px 20px 20px;
-  margin: auto;
+  /*margin: auto;*/
   display: flex;
 	justify-content:space-around;
 	flex-wrap: wrap;
@@ -296,7 +301,7 @@ max-height: 199px;
 background-color: #ffffff;
 border-radius: 20px 20px 20px 20px;
 border:5px solid #ffffff;
-box-shadow: 5px 5px 10px grey;
+box-shadow: 0px 2px 5px 2px rgb(224 224 224);
 display: flex;
 flex-direction: column;
 text-decoration: none !important;
@@ -371,7 +376,7 @@ margin-left: 2px;
   font-weight: 700;
   color: black;
   text-decoration: none !important;
-  padding: 40px 0px 6px 4px;
+  padding: 51px 0px 6px 4px;
 }
 
 /*Populaire*/
@@ -422,12 +427,12 @@ margin-left: 2px;
 }
 
 .logement{
-width: 100%;/*343px*/
-height: 144px;
+min-width: 100%;/*343px*/
+min-height: 144px;
 background-color: #ffffff;
 border-radius: 20px 20px 20px 20px;
 border:5px solid #ffffff;
-box-shadow: 5px 5px 10px grey;
+box-shadow: 0px 2px 5px 2px rgb(224 224 224);
 text-align: left;
 overflow: hidden;
 display: flex;
@@ -518,7 +523,7 @@ color: black;
   max-height: 445px;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 0px 2px 5px 2px rgb(224 224 224);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -567,7 +572,7 @@ footer{
   height: 21px;
   width: 190px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px;
 }
 
@@ -664,7 +669,7 @@ nav{
   
    
   .filtre{
-    /*min-width: 100%;*/
+    min-width: 100%;
     min-height: 50px;
     gap: 3%;
     
@@ -700,6 +705,7 @@ min-width: 100%;
   }
   
   .populaire2{
+    max-width: 33%;
     display: flex;
     flex-direction: inherit;
     flex-wrap: nowrap;
@@ -742,6 +748,8 @@ min-width: 100%;
 
 body{
   width: 375px;
+  margin-left: 0%;
+  margin-right: 0%;
 }
   
   
@@ -790,6 +798,7 @@ body{
    /*Recherche*/
 .recherche{
   min-width: 100%;
+  min-height: 473px;
 }
    .tlg0{
     width: 80%; /*298px*/
@@ -964,10 +973,11 @@ border: 20px solid white;
     order: -1;
     min-width:100%; /*375px*/
     min-height: 580px;
-    /*margin-top: 17px;*/
+    margin-top: 0px;
     text-align: center;
     padding-bottom: 47px;
     border: 20px solid #f2f2f2;
+    border-radius: 0px;
   }
   .populaire2{
     min-width:100%; /*334px*/
@@ -994,14 +1004,15 @@ border: 20px solid white;
   
   .titpop{
     min-width:100% ;
-    height: 26px;
+    min-height: 26px;
+    padding-top: 8px;
     /*margin-top: 28px;
     margin-bottom: 26px;
     gap: 54px;*/
   }
   
   .logement{
-    max-width:324px;
+    max-width:41%; /*324px;*/
     min-height: 144px;
     /*margin-bottom:5px;
     margin-top: 0px;
@@ -1051,6 +1062,8 @@ border: 20px solid white;
     min-width: 100%;
     min-height: 886px;
     border: 20px solid white;
+    padding-top: 0px;
+    margin-top: 85px;
     /*display: flex;
     flex-direction: column;*/
   }
