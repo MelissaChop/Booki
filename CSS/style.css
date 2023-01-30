@@ -755,9 +755,13 @@ nav{
 /*Telephone portable*/
 @media all and (max-width:767px)
 {
+html{
+  max-width: 100%;
+  margin-right: 0px;
+}
 
 body{
-  min-width: 320px;
+  max-width: 100%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -765,29 +769,32 @@ body{
   
   /* en-tête */
   header{
-    min-width: 100%;
+    max-width: 100%;
     min-height: 129px;
     margin-bottom: 31px;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .Logo{
     display: flex;
-  margin-left: 41.8%;
-  margin-right: 41.8%;
+  /*margin-left: 41.8%;
+  margin-right: 41.8%;*/
     margin-top: 21px;
   }
   
   nav{
     min-width: 100%;
-    min-height: 43;
+    /*min-height: 43px;*/
     padding-top: 40px;
     margin-top: 48px;
   }
 
   .lien{
     min-height: 43px;
+    min-width: 50%;
     border-bottom: 3px solid #F2F2F2;
     padding-top: 0px;
     padding-bottom: 23px;
@@ -807,20 +814,20 @@ body{
 
    /*Recherche*/
 .recherche{
-  min-width: 100%;
+  max-width: 100%;
   min-height: 473px;
 }
-   .tlg0{
+.tlg0{
     width: 80%; /*298px*/
     height: 100%;
     margin-top: 0px;
-   }
+}
 
 .recherche1{
-  min-width: 100%;
+  max-width: 100%;
 }   
   .rectangle{
-    min-width: 100%; /*332px*/
+    max-width: 100%; /*332px*/
     height: 49px;
     margin-top: 36px;
     margin-bottom: 34px;
@@ -852,11 +859,11 @@ body{
   
   .filtre2{
     flex-direction: column;
-    min-width: 100%;
+    max-width: 100%;
   }
 
   .filtre1{
-    min-width: 25%; /*334px;*/
+    max-width: 100%; /*334px;*/
     height: 117px;
     flex-wrap: wrap;
     gap: 4%;/*14px*/
@@ -888,13 +895,13 @@ body{
   
 
 .filtre3{
-  width: 333px;
+  max-width:98%; /*333px*/
   height: 57px;
   margin-bottom: 17px;
 }
 
   .ligneinfo{
-    min-width: 90%; /*298px;*/
+    max-width: 90%; /*298px;*/
     height: 57px;
     display: flex;
     flex-wrap: wrap;
@@ -908,7 +915,7 @@ body{
   /*Sections*/
    
   .sections{
-    min-width:100%;/*875px*/
+    max-width:100%;/*875px*/
     min-height: 1905px;
     margin-top: 0px;
   }
@@ -929,7 +936,7 @@ border: 20px solid white;
 }
 
 .boitehebergement1{
-  min-width:335px;
+  min-width:100%;/*335px*/
   min-height: 1254px;
   margin-top: 19px;
   margin-bottom: 0px;
@@ -1074,7 +1081,7 @@ border: 20px solid white;
   
   /*Activites*/
   .activite1{
-    min-width: 100%;
+    max-width: 100%;
     min-height: 886px;
     border: 20px solid white;
     padding-top: 0px;
@@ -1134,7 +1141,7 @@ border: 20px solid white;
     padding-top: 45px;
     padding-bottom: 61px;*/
     /*flex-wrap: nowrap;*/
-    min-width: 100%;
+    max-width: 100%;
     min-height: 501px;
     flex-direction: column;
     justify-content: space-between;
