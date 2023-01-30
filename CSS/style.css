@@ -5,6 +5,7 @@
 /*Box-sizing*/
 html{
   max-width: 1400px;
+  -webkit-text-size-adjust: 100%;
 }
 
 body{
@@ -104,12 +105,13 @@ text-decoration: none;
 
 .tlg0{
 width: 575px;
-height: 26px;
+height: 100%; /*26px*/
 font-size: 22px;
 font-weight: 700;
 line-height: 26px;
 text-align: left;
 margin: 0px;
+flex-grow: 0;
 }
 
 .recherche1{
@@ -119,6 +121,7 @@ width: 296px;
 height: 19px;
 margin-top: 8px;
 margin-bottom: 20px;
+flex-grow: 0;
 }
 
 .rectangle{
@@ -126,6 +129,7 @@ margin-bottom: 20px;
   height: 49px;
   display: flex;
   margin-bottom: 32px;
+  flex-grow: 0;
 }
 
 .ico{
@@ -183,6 +187,8 @@ margin-bottom: 20px;
   min-height: 50px;
   margin-bottom: 35px;
   padding-left: 1%;
+  flex-grow: 1;
+
 }
 
 .filtre2 h2{
@@ -200,7 +206,9 @@ margin-bottom: 20px;
   gap: 3%;
   max-width: 100%;
   flex-grow: 1;
-  height: 50px;
+  max-height: 100%;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .filter{
@@ -240,6 +248,7 @@ margin-bottom: 20px;
   width: 447px;
   height: 24px;
   margin-left: 4px;
+  flex-grow: 0;
 }
 
 .fa-info{
@@ -271,7 +280,7 @@ margin-bottom: 20px;
   max-height: 626px;
   max-width: 65.6%; /* 880 px*/
   background-color: #F2F2F2;
-  border: 40px solid #F2F2F2;
+  border: 20px solid #F2F2F2; /*40px*/
   border-radius: 20px 20px 20px 20px;
   /*margin: auto;*/
   display: flex;
@@ -389,7 +398,7 @@ margin-left: 2px;
   max-height: 625px;
   width:31.4%; /*420px*/
   background-color: #F2F2F2;
-  border: 40px solid #F2F2F2;
+  border: 20px solid #F2F2F2; /*40px*/
   border-radius: 20px 20px 20px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -677,7 +686,7 @@ nav{
     max-width: 90%;
     min-height: 50px;
     gap: 3%;
-    
+    row-gap: 15px;
   }
   
   .filter{
@@ -753,7 +762,7 @@ nav{
 {
 
 body{
-  width: 375px;
+  min-width: 320px;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -761,7 +770,7 @@ body{
   
   /* en-tête */
   header{
-    max-width: 100%;
+    min-width: 100%;
     min-height: 129px;
     margin-bottom: 31px;
     justify-content: space-between;
@@ -776,7 +785,7 @@ body{
   }
   
   nav{
-    max-width: 100%;
+    min-width: 100%;
     min-height: 43;
     padding-top: 40px;
     margin-top: 48px;
@@ -808,7 +817,7 @@ body{
 }
    .tlg0{
     width: 80%; /*298px*/
-    height: 52px;
+    height: 100%;
     margin-top: 0px;
    }
 
@@ -816,7 +825,7 @@ body{
   min-width: 100%;
 }   
   .rectangle{
-    max-width: 100%; /*332px*/
+    min-width: 100%; /*332px*/
     height: 49px;
     margin-top: 36px;
     margin-bottom: 34px;
@@ -920,7 +929,7 @@ border: 20px solid white;
 }
 
 .boitehebergement1{
-  max-width:335px;
+  min-width:335px;
   min-height: 1254px;
   margin-top: 19px;
   margin-bottom: 0px;
@@ -942,7 +951,7 @@ border: 20px solid white;
 }
 
   .log1{
-    max-width:100%; /*335px*/
+    min-width:100%; /*335px*/
     min-height: 124px;
   }
 
@@ -1018,7 +1027,7 @@ border: 20px solid white;
   }
   
   .logement{
-    max-width:41%; /*324px;*/
+    min-width:41%; /*324px;*/
     min-height: 144px;
     /*margin-bottom:5px;
     margin-top: 0px;
@@ -1076,7 +1085,7 @@ border: 20px solid white;
  
 
   .tlg3{
-    max-width: 50%; /*212px*/
+    min-width: 50%; /*212px*/
     min-height:30px;
    /* display: flex;
     flex-wrap: wrap;
