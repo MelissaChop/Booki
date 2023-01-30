@@ -546,7 +546,7 @@ color: black;
 
 .act1{
  
-  min-height: 389px;
+  min-height: 87.5%; /*389px*/
   width: 100%; /*302px*/
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
@@ -554,7 +554,7 @@ color: black;
 
 .st3{
   width: 100%;/*302px;*/
-  height: 56px;
+  min-height: 12.5%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
