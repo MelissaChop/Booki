@@ -183,7 +183,8 @@ flex-grow: 0;
 
 .filtre2{
   display: flex;
-  max-width: 914px;
+  justify-content: space-between;
+  max-width: 846px;
   min-height: 50px;
   margin-bottom: 35px;
   padding-left: 1%;
@@ -201,26 +202,35 @@ flex-grow: 0;
   margin-right: 3%;
 }
 
-.filtre{
+.filtre1{
   display: flex;
-  gap: 3%;
-  max-width: 100%;
+  /*gap: 3%;
+  max-width: 100%;*/
   flex-grow: 1;
   max-height: 100%;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-between;
 }
-
+.filtre0{
+  height: 50px;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px 25px 25px 25px;
+  display: flex;
+  padding: 11px 2%;
+  max-width: 226px;
+  font-weight: 700;
+  font-size: 17px;
+}
 .filter{
     /*width: max-content;*/
-    height: 50px;
+   /* height: 50px;
     border: 2px solid #d9d9d9;
     border-radius: 25px 25px 25px 25px;
     display: flex;
     align-items: center;
     /*justify-content: flex-start;*/
-    padding-left:20px;
-    padding-right: 20px; 
+   /* padding-left:20px;
+    padding-right: 20px; */
 }
 
 .filter2{
@@ -230,11 +240,11 @@ flex-grow: 0;
 }
 
 
-.filter:hover{
+.filtre0:hover{
   background-color: #DEEBFF;
 }
 
-.filter i{
+.filtre0 i{
   color: #0065FC;
   margin-right: 10px;
   font-size: 22px;
