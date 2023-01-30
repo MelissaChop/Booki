@@ -221,23 +221,6 @@ flex-grow: 0;
   font-weight: 700;
   font-size: 17px;
 }
-.filter{
-    /*width: max-content;*/
-   /* height: 50px;
-    border: 2px solid #d9d9d9;
-    border-radius: 25px 25px 25px 25px;
-    display: flex;
-    align-items: center;
-    /*justify-content: flex-start;*/
-   /* padding-left:20px;
-    padding-right: 20px; */
-}
-
-.filter2{
-  max-width: 100%;
-  font-weight: 700;
-  font-size: 17px;
-}
 
 
 .filtre0:hover{
@@ -693,22 +676,23 @@ nav{
   }
   
    
-  .filtre{
+  .filtre1{
     max-width: 90%;
     min-height: 50px;
-    gap: 3%;
-    row-gap: 15px;
+    /*gap: 3%;*/
+    /*row-gap: 15px;*/
   }
   
-  .filter{
+  .filtre0{
     max-width: 100%;
-    padding-left: 15px;
-    text-align: center;
+    padding: 11px 1.90%;
+   /* padding-left: 15px;*/
+   /* text-align: center;*/
   }
   
-  .filter2{
+  /*.filter2{
     max-width: 100%;
-  }
+  }*/
   
   /*Herbergement */
   .sechebergement{
@@ -871,26 +855,31 @@ body{
     min-width: 100%;
   }
 
-  .filtre{
-    min-width: 100%; /*334px;*/
+  .filtre1{
+    min-width: 25%; /*334px;*/
     height: 117px;
     flex-wrap: wrap;
     gap: 4%;/*14px*/
+    justify-content: normal;
   }
 
-  .filter{
+  .filtre0{
     height: 50px;
     min-width: 45.5%; /*160px;*/
-    
+    font-size: 11px;
+    flex-wrap: inherit;
+    align-content: center;
+    line-height: 12;
+
     /*padding-left: 13px;
     padding-right: 0px;*/
   }
 
-  .filter2{
+  /*.filter2{
     font-size: 11px;
-  }
+  }*/
 
-  .filtre2 .filtre i{
+.filtre0 i{
     margin-right: 5px;
     display: flex;
     align-items: center;
