@@ -144,7 +144,7 @@ flex-grow: 0;
 
 .ville{
   width: 236px;
-  height: 49;
+  height: 49px;
   border: 1px solid #F2F2F2;
   box-shadow: none; 
   font-weight: 700;
@@ -195,7 +195,7 @@ flex-grow: 0;
 .filtre2 h2{
   width: 54px;
   height: 21px;
-  font-style: Bold;
+  font-style: 700;
   font-size: 18px;
   line-height: 21px;
   text-align: end;
@@ -295,7 +295,7 @@ flex-grow: 0;
   /*width: 278px;*/
   font-weight: 700;
   font-size: 22px;
-  font-style: bold;
+  font-style: 700;
   margin-bottom: 26px;
   margin-top: 2px;
 
@@ -325,7 +325,7 @@ color: black;
 
 .bt2{
  width: 100%; /*236px*/
- max-height: 37,6%; /*75px*/
+ max-height: 37%; /*75px*/
  display: flex;
   flex-direction: column;
   justify-content: center;
@@ -421,7 +421,7 @@ margin-left: 2px;
 .tlg2{  
   /*width: 205px;*/
   height: 26px;
-  font-style: bold;
+  font-style: 700;
   font-size: 22px; 
   font-weight: 700;
 
@@ -924,7 +924,7 @@ body{
  min-height:1326px ;
  background-color: white;
 border-radius: 0px;
-text-align: center;
+/*text-align: center;*/
 /*margin-bottom: 161px;
 margin-left: 0px;*/
 display: inherit;
@@ -936,6 +936,7 @@ border: 20px solid white;
   min-height: 1254px;
   margin-top: 19px;
   margin-bottom: 0px;
+  gap: 1%;
 }
 
 .tlg1{
