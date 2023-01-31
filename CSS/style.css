@@ -862,7 +862,7 @@ body{
     max-width: 100%; /*334px;*/
     height: 117px;
     flex-wrap: wrap;
-    gap: 4%;/*14px*/
+    gap: 2%;/*14px*/
     justify-content: normal;
   }
 
