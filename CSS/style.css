@@ -564,7 +564,7 @@ footer{
 
   width: 100%; /*1300px*/
   background-color: #f2f2f2;
-  margin-top: 61px;
+  /*margin-top: 61px;*/
   display: flex;
   gap:17%;
   padding: 50px 60px 70px 60px;
@@ -727,6 +727,7 @@ nav{
   .activite1{
     padding-top: 70px;
     max-height: 331px;
+    margin-top: 0px;
   }
   
   .activite2{
