@@ -5,6 +5,7 @@
 /*Box-sizing*/
 html{
   max-width: 1400px;
+  margin: auto;
 }
 
 body{
@@ -564,7 +565,7 @@ footer{
 
   width: 100%; /*1300px*/
   background-color: #f2f2f2;
-  /*margin-top: 61px;*/
+  margin-top: 61px;
   display: flex;
   gap:17%;
   padding: 50px 60px 70px 60px;
@@ -813,6 +814,7 @@ body{
 .recherche{
   max-width: 100%;
   min-height: 473px;
+  margin: 21px 10px 17px 10px;
 }
 .tlg0{
     width: 80%; /*298px*/
@@ -904,9 +906,6 @@ body{
     flex-wrap: wrap;
   }
 
-  .fa-info{
-    min-width: 7%;
-  }
 
 
   /*Sections*/
