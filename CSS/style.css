@@ -492,7 +492,6 @@ color: black;
 /*Activite*/
 .activite1{
   width: 100%; /*1300px*/
-  height: 493px;
   display: flex;
   flex-direction: column;
   margin-top: 60px;
